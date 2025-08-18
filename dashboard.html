@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Room Share App</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="navbar">
+    <h1>Room Share App 🎉</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <div class="dashboard-container">
+    <h2>Welcome to Your Dashboard</h2>
+    <div class="dashboard-buttons">
+      <button onclick="location.href='group-creation.html'">➕ Create Group</button>
+      <button onclick="location.href='group-page.html'">📂 Open Group</button>
+      <button onclick="location.href='history.html'">📜 View History</button>
+    </div>
+  </div>
+
+  <script>
+    function logout() {
+      alert("Logging out...");
+      location.href = 'Home.html';
+    }
+  </script>
+</body>
+</html>
